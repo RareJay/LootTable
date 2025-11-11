@@ -1,0 +1,89 @@
+@import url('https://fonts.cdnfonts.com/css/old-newspaper');
+
+.newspaper {
+  width: 612px;
+  height: 1008px;
+  margin: 5%;
+  padding: 10px 20px 10px 20px;
+  background-color: burlywood; /* To be newspaper */
+  color: black;
+  box-shadow: 5px 10px black;
+  font-family: 'Georgia', 'Times New Roman', Times, serif;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #000;
+}
+.Title {
+  width: 100%;
+  margin: 0px;
+  border: 0px;
+  font-family: 'Old newspaper font', sans-serif;
+  text-align: center;
+  font-size: 26px;
+}
+
+.SubTitle{
+  font-family: 'Old newspaper font', sans-serif;
+  text-align: center;
+  font-size: 36px;
+}
+h1{
+  margin:0px;
+}
+p{
+  margin:0px;
+}
+
+.IssueNo {
+  width: 100%;
+  margin:0%;
+  padding:0%;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.left {
+  margin-left: 10px;
+}
+.center {
+  flex-grow: 1;
+  text-align: center;
+}
+.right {
+  margin-right: 10px;
+}
+.seperationLine {
+  width: 100%;
+  border-top: 1px solid black;
+  padding-top:1px;
+  padding-bottom:1px;
+  border-bottom: 1px solid black;
+}
+
+Page1Grid > section {
+  flex: 1;
+  height: 100%;
+  margin:0%;
+  padding: 0px;
+  overflow: auto; /* Ensures content can be scrolled if it overflows */
+}
+
+
+
+.Page1Grid{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.PageBase{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+
+@media screen and (max-width: 1400px) {
+  .PageBase{
+    display: block;
+    grid-template-columns: 1fr;
+  }
+}
