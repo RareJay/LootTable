@@ -4,7 +4,7 @@ services:
     image: nginx:latest
     container_name: website
     volumes:
-      - /home/kuol/services/LootTable/src: /usr/share/nginx/html
+      - /home/kuol/services/LootTable/src:/usr/share/nginx/html
     ports:
-    - 8080:80
+    - "8080:80"
     restart: always
